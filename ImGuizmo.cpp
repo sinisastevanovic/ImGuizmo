@@ -47,7 +47,7 @@ namespace IMGUIZMO_NAMESPACE
    static const float ZPI = 3.14159265358979323846f;
    static const float RAD2DEG = (180.f / ZPI);
    static const float DEG2RAD = (ZPI / 180.f);
-   const float screenRotateSize = 0.06f;
+   const float screenRotateSize = 0.04f;
    // scale a bit so translate axis do not touch when in universal
    const float rotationDisplayFactor = 1.2f;
 
@@ -639,8 +639,8 @@ namespace IMGUIZMO_NAMESPACE
       // default values
       TranslationLineThickness   = 3.0f;
       TranslationLineArrowSize   = 6.0f;
-      RotationLineThickness      = 2.0f;
-      RotationOuterLineThickness = 3.0f;
+      RotationLineThickness      = 3.0f;
+      RotationOuterLineThickness = 4.0f;
       ScaleLineThickness         = 3.0f;
       ScaleLineCircleSize        = 6.0f;
       HatchedAxisLineThickness   = 6.0f;
@@ -766,7 +766,7 @@ namespace IMGUIZMO_NAMESPACE
       OPERATION mOperation = OPERATION(-1);
 
       bool mAllowAxisFlip = true;
-      float mGizmoSizeClipSpace = 0.1f;
+      float mGizmoSizeClipSpace = 0.15f;
 
       inline ImGuiID GetCurrentID()
       {
